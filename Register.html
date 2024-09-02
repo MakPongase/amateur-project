@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Register.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Register Page</title>
+</head>
+<body>
+    <a href="Index.html"><img src="Images/PiscesFarmLogo.png" alt=""></a>
+    <form action="Register.php" method="POST">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Please fill in this form to register.</p>
+            <div class="name-container">
+                <input type="text" placeholder="Enter First Name" name="first-name" required autofocus>
+                <input type="text" placeholder="Enter Last Name" name="last-name" required>
+            </div>
+    
+            <input type="email" placeholder="Enter Email" name="email" required>
+    
+            <input type="password" placeholder="Enter Password" name="password" required id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).{8,}" title="Password must be at least 8 characters long and contain one uppercased letter, one lowercase letter, one digit, and one special character." >
+    
+            <input type="password" placeholder="Confirm Password" name="confirm-password" required id="confirm-password">
+            <label for="birthday-container"><b>Birthday</b></label>
+            <div class="birthday-container">
+                <select name="month" id="month">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="4">April</option>
+                    <option value="5">May</option>
+                    <option value="6">June</option>
+                    <option value="7">July</option>
+                    <option value="8">August</option>
+                    <option value="9">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                </select>
+                <select name="day" id="day"></select>
+                <select name="year" id="year"></select>
+            </div>
+            <div class="date-announce">
+                <span id="Invalid-Date-Input"></span>
+            </div>
+            <label for="contact"><b>Contact Number</b></label>
+            <input type="tel" placeholder="Phone Number" pattern="09[0-9]{9}" title="Please enter a valid Philippines phone number." name="contact" id="contact" required>
+    
+            <div id="address-container">
+                <label for="region"><b>Personal Address</b></label>
+                <select id="region">
+                    <option value="" disabled selected>Select Region</option>
+                </select>
+                <input type="hidden" name="region_text" id="region-text">
+            </div>
+            <div id="province-container">
+                <select id="province">
+                    <option value="" disabled selected>Select Province</option>
+                </select>
+                <input type="hidden" name="province_text" id="province-text">
+            </div>
+            <div id="city-container">
+                <select id="city">
+                    <option value="" disabled selected>Select City</option>
+                </select>
+                <input type="hidden" name="city_text" id="city-text">
+            </div>
+            <div id="barangay-container">
+                <select id="barangay">
+                    <option value="" disabled selected>Select Barangay</option>
+                </select>
+                <input type="hidden" name="barangay_text" id="barangay-text">
+            </div>
+            <div id="street-container">
+                <input type="text" placeholder="Street" name="street" id="street">
+            </div>
+            <div id="house-number-container">
+                <input type="text" placeholder="House Number" name="house-number" id="house-number">
+            </div>
+    
+            <div class="button-container">
+                <button type="submit" class="signupbtn">Sign Up</button>
+            </div>
+            <div class="form-footer">
+                <p>Already have an account? <a href="LoginPage.php">Login Instead!</a></p>
+            </div>
+        </div>
+    </form>
+    
+    <script src="JavaScript/address-selector.js"></script>
+    <script src="JavaScript/RegisterConstraints.js"></script>
+</body>
+</html>
