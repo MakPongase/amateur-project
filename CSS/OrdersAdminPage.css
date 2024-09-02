@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.header-nav {
+    background-color: rgb(48, 48, 48);
+    border-right: 1px solid gray;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0em;
+    color: rgb(255, 255, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+main {
+    background-color: rgb(230, 230, 221);
+    width: 82%;
+    overflow-y: scroll;
+}
+
+.buttons-container h2 {
+    margin-bottom: 2em;
+}
+.header-nav button {
+    padding: .6em 5em;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(212, 105, 105);
+    color: white;
+}
+.header-nav ul {
+    text-align: center;
+}
+.header-nav  ul li {
+    list-style: none;
+    margin: .1em 0em;
+
+}
+.header-nav  ul li a:hover {
+    background-color: rgb(172, 172, 172);
+}
+.header-nav ul li a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-size: 1.2em;
+    padding: 0.5em 0em;
+    display: block;
+    width: 400px;
+    background-color: white;
+}
+
+/* MAIN CONTENT */
+main {
+    padding-left: 2em;
+    padding-top: 2em;
+}
+main h1 {
+    color: rgb(62, 62, 62);
+}
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    align-items:center;
+    justify-content: space-between;
+}
+.main-nav {
+    width: 100%;
+}
+
+
+.main-nav ul {
+    display: flex;
+    justify-content: left;
+    padding: 1em 0;
+    margin: 0;
+    list-style: none;
+}
+
+.main-nav ul li {
+    margin: 0 1em;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-size: 1em;
+    padding: 0.5em 2em;
+    display: block;
+    background-color: white;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s; 
+}
+
+.main-nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+#pending {
+    background-color: rgb(91, 91, 91);
+   color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f0f0f0;
+}
+
+.total-row {
+    background-color: #f9f9f9;
+}
+
+.total-label {
+    font-weight: bold;
+    text-align: right;
+}.action-row {
+    background-color: #f9f9f9;
+}
+
+.action-buttons {
+    text-align: left;
+}
+
+.action-buttons button {
+    padding: 8px 16px;
+    margin: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.on-the-way {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.cancel {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+.order-container {
+    margin-top: 1em;
+    padding: 1em 1em;
+    background-color: white;
+    width: 90%;
+    border-radius: 5px;
+}
+.order-container h3{
+    margin-bottom: 0.5em;
+}
+.order-success {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.order-failed {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

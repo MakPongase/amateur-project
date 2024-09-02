@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(33, 48, 36);
+    color: #444444;
+    flex-direction: column;
+}
+img {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 1em;
+}
+form {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+  }
+.container {
+    margin-top: 1em;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"], input[type="password"], input[type="tel"], input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+
+}
+.container h1 {
+    margin-bottom: 10px;
+}
+.container p {
+    margin-bottom: 1em;
+}
+button {
+    padding: 10px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+.form-footer {
+    margin: 10px 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.form-footer button{
+    background-color: #5c5c5c;
+}
+.checkbox-span-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.container a, .container a:visited, .form-footer a, .form-footer a:visited{
+    color: #007bff;
+    text-decoration: none;
+}
+.name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container {
+    width: 45%; 
+}
+.birthday-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 0px .5em 0px; 
+
+}
+.birthday-container select {
+    width: 33%;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+label {
+    margin-bottom: 5px;
+    font-size: 13px ;
+}
+.name-container input {
+width: 48%;
+
+}
+.button-container {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+}
+.form-footer {
+    display: flex;
+   align-items: center;
+    width: 100%;
+}
+.wrong {
+    color: rgb(145, 19, 19);
+    border-color: rgb(145, 19, 19) !important;
+}
+.correct-password {
+    color: rgb(19, 145, 19);
+    border: 1px solid rgb(19, 145, 19) !important;
+}
+.date-announce {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    color: rgb(145, 19, 19);
+    font-size: 14px;
+    margin-top: -9px;
+    margin-bottom: 10px;
+}
+select,
+input[type="hidden"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="hidden"] {
+  padding: 0;
+  height: 0;
+  margin: 0;
+  border: none;
+}
+#address-container, #province-container, #city-container, #barangay-container, #street-container, #house-number-container {
+    display: none;
+}

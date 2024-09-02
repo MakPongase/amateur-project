@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+.header-nav {
+    background-color: rgb(33, 48, 36);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5em;
+    padding: 0em 4em;
+    transition: background-color 0.5s ease;
+    width: 100%;
+}
+.header-nav img {
+    height: 30px;
+}
+.links-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.links-container ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left:1em ;
+}
+.links-container ul li {
+    margin: 0 10px;
+}
+.links-container a {
+    text-decoration: none;
+    color: #ffffffc5;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    overflow: hidden;
+    margin-left: 1em;
+}
+nav i {
+    color: white;
+}
+/* OMG */
+main {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.4em;
+    padding: 0em 4em 0em 4em;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+.user-information h1 {
+    color: rgb(180, 180, 180);
+    margin-bottom: 1em;
+}
+
+  .user-information {
+    height: auto 0;
+    width: 1200px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 5px;
+    padding: 1em 5em 1em 2em;
+
+  }
+  article {
+    margin-left: 3em;
+    height: 600px;
+    width: 300px;
+    background-color: rgb(123, 123, 123);
+    border-radius: 5px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+  }
+  .container {
+    padding: 1em;
+    width: 100%;
+    background-color: rgb(246, 246, 246);
+    margin-bottom: 3px;
+  }
+  .container:hover {
+    background-color: rgba(250, 250, 250, 0.773);
+  }
+  article a {
+    text-decoration: none;
+    color: rgb(59, 59, 59);
+  }
+  .name-container input[type="text"]{
+    padding: 0.7em 0.6em;
+    width: 442px;
+    border-radius: 5px;
+    border: 0.4px solid gray;
+    margin-right:1em ;  
+    font-size: 1em;
+  }
+  .name-container {
+    display: flex;
+    flex-direction: row;
+}
+.margin-bottom-2 {
+    margin-bottom: 1.7em;
+}
+.email-container input[type="text"] {
+    padding: 0.7em 0.6em;
+    width:  900px;
+    border-radius: 5px;
+    border: 0.4px solid gray;
+    margin-right:1em ;
+    font-size: 1em;
+}
+.password-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.password-container input[type="text"]{
+    padding: 0.7em 0.6em;
+    width:  900px;
+    border-radius: 5px;
+    border: 0.4px solid gray;
+    margin-right:1em ;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+/* .password-container a{
+    padding: 0.7em 0.6em;
+    width: 150px;
+    border-radius: 5px;
+    background-color:  rgb(17, 118, 206);
+    margin-right:1em ;
+    font-size: 1em;
+    text-decoration: none;
+    color: white ;
+    box-sizing: border-box;
+    text-align: center;
+} */
+.birthday-container input[type="text"] {
+    padding: 0.7em 0.6em;
+    width: 900px;
+    border-radius: 5px;
+    border: 0.4px solid gray;
+    margin-right:1em ;
+    font-size: 1em;
+}
+.address-container h2{
+    margin-top: 0.4em;
+    color: rgb(180, 180, 180);
+}
+.button-container {
+    width: 912px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.button-container button{
+    padding: 0.7em 0.6em;
+    width: 120px;
+    border-radius: 5px;
+    background-color:  rgb(17, 118, 206);
+    margin-right:1em ;
+    font-size: 1em;
+    text-decoration: none;
+    color: white ;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    margin-bottom: 1em;
+}
+.address-container input[type="text"] {
+    margin-top: 1em;
+    padding: 0.7em 0.6em;
+    width: 900px;
+    border-radius: 5px;
+    border: 0.4px solid gray;
+    margin-right:1em ;
+    font-size: 1em;
+}
+.address-container {
+    display: flex;
+    flex-direction: column;
+
+}
+.address-container button {
+    padding: 0.7em 0.6em;
+    width: 120px;
+    border-radius: 5px;
+    background-color:  rgb(17, 118, 206);
+    margin-right:1em ;
+    font-size: 1em;
+    text-decoration: none;
+    color: white ;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-container input[type="text"] {
+    padding: 0.7em 0.6em;
+    width: 900px;
+    border-radius: 5px;
+    border: 0.4px solid gray;
+    margin-right:1em ;
+    font-size: 1em;
+}
+#password-update {
+    padding: 0.7em 0.6em;
+    width: 160px;
+    border-radius: 5px;
+    background-color:  rgb(17, 118, 206);
+    margin-right:1em ;
+    font-size: 1em;
+    text-decoration: none;
+    color: white ;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    margin-bottom: 1em;
+}
+#Account {
+    text-decoration: underline !important;
+}
+select,
+input[type="hidden"] {
+    display: block;
+    padding: 0.7em 0.6em;
+    width:  900px;
+    border-radius: 5px;
+    border: 0.4px solid gray;
+    margin-right:1em ;
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+body {
+    height: auto 0;
+    padding-bottom: 2em;
+}
+input[type="text"][disabled] {
+
+    background-color: #f2f2f2;
+}
+label[for="region"] {
+    margin-bottom: 1.3em;
+}/* Add this to UserAccount.css */
+
+#address-form {
+    display: none; /* Ensure it's hidden initially */
+}
+
+/* Style for the Edit Address button */
+#edit-address-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#edit-address-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Styles for the address form elements */
+#address-container,
+#province-container,
+#city-container,
+#barangay-container,
+#street-container,
+#house-number-container {
+    margin-top: 10px;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style for the Cancel and Save buttons */
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.form-buttons button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.form-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Specific styles for the Cancel button */
+#cancel-address-btn {
+    background-color: #f44336 !important;
+}
+
